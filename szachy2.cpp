@@ -10,7 +10,14 @@ int main()
 
   if (x1 == x2 || y1 == y2)
   {
-    cout << "TAK";
+    if (x1 == x2 && y1 == y2)
+    {
+      cout << "NIE";
+    }
+    else
+    {
+      cout << "TAK";
+    }
   }
   else
   {
