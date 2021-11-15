@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int f (int a, int yeet, int n)
+int function (int a, int yeet, int n)
 {
   if(a>0)
   {
@@ -10,19 +10,25 @@ int f (int a, int yeet, int n)
     for(int i = 0;i<n;i++)
     {
       yeet++;
-      yeet = f(a,yeet);
+      yeet = function(a,yeet, n);
     }
     return yeet;
   }
+  else
+  {
+    return 0;
+  }
 }
 
-int maihjvgghcghcvcvhghhn2()
+int main()
 {
-  int n;
-  int a = n;
+  int n;  
   cin >>n;  
-  int y = f(a,0,n);
+  cout<<n;
+  int a = n;
+  int y = function(a,0,n);
   cout<<y;
+  return 0;
 }
 // n = int(input())
 // a = n

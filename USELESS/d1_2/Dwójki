@@ -1,0 +1,19 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+  long long x;
+  cin>>x;
+
+  long long out = 0;
+  long long pow = 1;
+  while(pow<=x)
+  {
+    pow*=2;
+    out++;
+  }
+  cout<<out;
+  return 0;
+}

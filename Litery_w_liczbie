@@ -1,0 +1,34 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+  int n;
+  cin>>n;
+  int zle = 0;
+  
+  while(n>0)
+  {
+    cout<<n%16<<"\n";
+    if(n%16>=10)
+    {
+      zle+=1;
+      break;
+    }
+    n = (n-n%16)/16;
+  }
+
+
+  if(zle>0)
+  {
+    cout<<"TAK";
+  }
+  else
+  {
+    cout<<"NIE";
+  }
+  return 0;
+}
+
+//255 =  EE
