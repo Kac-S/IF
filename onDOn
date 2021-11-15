@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int f (int a, int yeet)
+int f (int a, int yeet, int n)
 {
   if(a>0)
   {
@@ -16,11 +16,12 @@ int f (int a, int yeet)
   }
 }
 
-int main()
+int maihjvgghcghcvcvhghhn2()
 {
   int n;
+  int a = n;
   cin >>n;  
-  y = f(n,0);
+  int y = f(a,0,n);
   cout<<y;
 }
 // n = int(input())
