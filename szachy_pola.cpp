@@ -13,8 +13,9 @@ int main()
   }
   else
   {
-    cout << ((n * n)-1)/2 - 1 << endl;
-    cout << ((n * n)-1)/2 + 1;
+    int a = ((n * n)-1)/2 + 1;
+    cout << n*n-a << endl;
+    cout << a;
   }
   return 0;
 }

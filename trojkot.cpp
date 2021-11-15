@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int maibhhgghn()
 {
   unsigned int a,b,c;cin>>a>>b>>c;
   
