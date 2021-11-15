@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int maihhhhhhhn()
 {
   int n;
   cin>>n;
