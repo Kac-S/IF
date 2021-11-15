@@ -2,23 +2,21 @@
 
 using namespace std;
 
-int maihhhhhhhn()
+int main()
 {
-  int n;
+  long long n;
   cin>>n;
   int zle = 0;
-  
   while(n>0)
-  {
-    cout<<n%16<<"\n";
+  {    
     if(n%16>=10)
     {
       zle+=1;
-      break;
     }
+    //cout<<n%16<<"\n";    
     n = (n-n%16)/16;
   }
-
+  
 
   if(zle>0)
   {
