@@ -1,0 +1,47 @@
+#include<iostream>
+
+using namespace std;
+
+string DOS(int N)
+{
+  int k=2, b = 1, n = N;
+
+  while(k * k < N)
+  {
+    while(n % k == 0)
+    {
+      if(k != N) {b += k; b += N / k;}
+      n /= k;
+    }
+    k++;
+  }
+  if (b - N == 0)
+  {
+    return("OK");
+  }
+  else if (b - N > 0)
+  {
+    return("WIELKA");
+  }
+  else
+  {
+    return("NIEDOSTATECZNA");
+  }
+}
+
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+
+  int n, a;
+  cin >> n;
+
+  for(int i = 0; i < n; i++)
+  {
+    cin >> a;
+    cout << DOS(a) << endl;
+  }
+
+  return 0;
+}
