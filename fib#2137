@@ -1,0 +1,37 @@
+#include<iostream>
+#include <chrono>
+
+using namespace std;
+using namespace std::chrono;
+
+long long fibonacci[100000];
+
+long long fib(long long n)
+{
+  if(n == 0 || n == 1) return 1;
+  if(fibonacci[n]>0) return fibonacci[n];
+  fibonacci[n] = fib(n-1)+fib(n-2);
+  return fibonacci[n];
+}
+
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+
+  int n;
+  cin>>n;
+
+  auto start = high_resolution_clock::now();
+
+  for(int i = 0; i<10;i++)
+  {
+    cout<<fib(n)<<"\n";
+  }
+
+  auto stop = high_resolution_clock::now();
+  auto duration = duration_cast<microseconds>(stop - start);
+  cout << "Time taken by function: "
+        << duration.count() << " microseconds" << endl;
+  return 0;
+}
