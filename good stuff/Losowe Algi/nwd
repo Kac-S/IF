@@ -10,6 +10,6 @@ int NWD(int a, int b)
   }
   else
   {
-    return 1;
+    return a;
   }
 }
