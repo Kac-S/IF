@@ -1,0 +1,15 @@
+int NWD(int a, int b)
+{
+  if(a > b)
+  {
+    return NWD(a-b, b);
+  }
+  else if ( b > a)
+  {
+    return NWD(a, b-a);
+  }
+  else
+  {
+    return 1;
+  }
+}
