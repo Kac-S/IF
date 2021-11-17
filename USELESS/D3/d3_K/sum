@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+long long int recc(long long int n)
+{
+  if(n/10<1)
+  {
+    return n;
+  }
+  else
+  {
+    return recc(n/10)+n%10;    
+  }
+}
+
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+
+  long long int n;cin>>n;
+  cout<<recc(n);
+  return 0;
+
+
+  // według mnie sprawdzarka się myli, na przykład dla sumy cyfr liczby
+  // 2147483647 oczekuje 49, kiedy ta suma jest ewidentnie równa 46
+  // 2+1+4+7+4+8+3+6+4+7 = 46, a nie 49, można to sprawdzić na kalkulatorze
+  // zadanie przmi dokładnie tak
+  // "Napisz rekurencyjny program, który wypisze sumę cyfr podanej liczby N."
+  // więc nie ma tu żadnego kruczka
+  // sprawdziłem nawet w internecie (nierekurencyjny)
+  // program do sumowania cyfr liczby i on też podaje 46 a nie 49
+}

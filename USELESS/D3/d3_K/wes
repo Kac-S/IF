@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+ 
+int NWD(int a, int b)
+{
+   while(a!=b)
+    if(a>b)
+        a-=b;
+    else
+        b-=a;
+   return a;
+}
+ 
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+  
+  int z;
+  cin >> z;
+
+  for (int i = 0; i < z; i ++)
+  {
+    int n, d;
+    cin >> n >> d;
+
+    if (n % d != 0)
+    {
+     cout << n << endl;
+    }
+    else
+    {
+      cout << n / NWD(n,d) << endl;
+    }
+  }
+  return 0;
+}

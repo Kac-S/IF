@@ -1,0 +1,36 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+
+  int n; cin>>n;
+
+  int arr[n];
+
+  for(int f = 0;f<n;f++)
+  {
+    cin>>arr[f];
+  }
+
+  int i,j;
+  cin>>i>>j;
+
+  int acc = 0;
+  int numN = 0;
+
+  for(int f = i-1;f<j;f++)
+  {
+    acc+=arr[f];
+    numN++;
+  }
+
+  int out = acc/numN;
+
+  cout<<out;
+
+  return 0;
+}
