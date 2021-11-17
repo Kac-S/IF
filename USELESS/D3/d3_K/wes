@@ -16,22 +16,13 @@ int main()
   ios_base::sync_with_stdio(0);
   cin.tie(0); cout.tie(0);
   
-  int z;
+  int z, n, d;;
   cin >> z;
 
-  for (int i = 0; i < z; i ++)
+  while (z--)
   {
-    int n, d;
     cin >> n >> d;
-
-    if (n % d != 0)
-    {
-     cout << n << endl;
-    }
-    else
-    {
-      cout << n / NWD(n,d) << endl;
-    }
+    cout << n << endl;
   }
   return 0;
 }
