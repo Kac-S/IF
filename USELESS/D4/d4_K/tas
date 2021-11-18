@@ -1,0 +1,38 @@
+from math import fabs, trunc
+ 
+def add(x):
+  y = 0
+  for i in x:
+    y += int(i)
+  return(y)
+
+a = []
+lenth = int(input())
+
+for i in range(lenth - 1):
+  a.append(0) 
+
+a = input().split()
+ 
+for i in range(len(a)):
+   a[i] = int(a[i])
+ 
+ 
+
+ 
+s = add(a)
+p = len(a)
+s1 = s - a[p-1]
+s2 = a[p-1]
+ 
+y = fabs(s1 - s2)
+
+for i in range(1, p):
+ 
+  s1 -= a[p-(i+1)]
+  s2 += a[p-(i+1)]
+  x = fabs(s1 - s2)
+  if x < y and s1 !=0 and s2 != 0:
+    y = x
+ 
+print(trunc(y))

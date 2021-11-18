@@ -1,0 +1,20 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+
+  float xa, ya, xb, yb;
+  cin>>xa>>ya>>xb>>yb;
+
+  float xc = 0, yc = 0;
+
+  xc = (xa+xb)/2;
+  yc = (ya+yb)/2;
+  cout<<xc<<" "<<yc;
+
+  return 0;
+}
