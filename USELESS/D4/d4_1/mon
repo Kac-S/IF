@@ -11,14 +11,14 @@ int main()
 
   string n, N;
   cin >> n;
-  int A[24]= {0};
-  int a = 0, b = 0;
+  long long int A[24]= {0};
+  long long int a = 0, b = 0;
 
-  for (int i = 0; i < n.size(); i++)
+  for (long long int i = 0; i < n.size(); i++)
   {
     A[n[i] - 'a']++;
   }
-  for (int i = 0; i < 24; i++)
+  for (long long int i = 0; i < 24; i++)
   {
     if (A[i] > a)
     {
@@ -31,7 +31,7 @@ int main()
       b = 'a' + i;
     }
   }
-  for(int i = 0; i < n.size(); i++)
+  for(long long int i = 0; i < n.size(); i++)
   {
     if (n[i] != b)
     {
