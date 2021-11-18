@@ -1,2 +1,2 @@
-  language = "cpp" 
+language = "cpp" 
 run = "clang++ -std=c++2a *.cpp -o main\nchmod 744 main\n./main "
