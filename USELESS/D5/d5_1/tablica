@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+const int n = 10;
+int arr[n] = { 2, 4, 5, 8, 9, 12, 16, 19, 20, 22 };
+
+int main()
+{
+  ios_base::sync_with_stdio(0);
+  cin.tie(0); cout.tie(0);
+
+  int a;cin>>a;
+
+  int sr = n/2;
+  int l = 0;
+  int p = n;
+
+  while(a!=arr[sr])
+  {
+    if(a>arr[sr])
+    {
+      l = sr;
+    }
+    else if(a<arr[sr])
+    {
+      p = sr;
+    }      
+    sr = (l+p) / 2;
+  }
+  
+  cout<<sr;
+
+  return 0;
+}
